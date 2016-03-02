@@ -1,0 +1,18 @@
+#
+# Windows PowerShell script for AD DS Deployment
+#
+
+Import-Module ADDSDeployment
+Install-ADDSForest `
+-CreateDnsDelegation:$false `
+-DatabasePath "C:\AD DS DATA\database" `
+-DomainMode "Win2012R2" `
+-DomainName "directory.micro-agents.net" `
+-DomainNetbiosName "DIRECTORY" `
+-ForestMode "Win2012R2" `
+-InstallDns:$true `
+-LogPath "C:\AD DS DATA\Logfiles" `
+-NoRebootOnCompletion:$false `
+-SysvolPath "C:\AD DS DATA\sysvol" `
+-Force:$true
+
