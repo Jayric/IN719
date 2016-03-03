@@ -1,0 +1,8 @@
+Package: interactive-cowsay
+Version: 1.0
+Architecture: all
+Essential: no
+Depends: cowsay
+Installed-Size: 512
+Maintainer: Jay Watphisit <watphv1@student.op.ac.nz> Richard Horne <hornerb1@student.op.ac.nz>
+Description: Provides an interactive front end for cowsay
